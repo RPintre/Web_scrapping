@@ -4,10 +4,12 @@
 IPSSI - Module Web Scraping - Jour 1
 TP - Veille technologique automatisee : Blog du Moderateur
 
-Etape 2 : pagination sur /articles/page/N/ jusqu'a 200 articles,
-avec retry + backoff exponentiel sur les erreurs temporaires (5xx, 429).
+Etape 3 : persistance des articles collectes en CSV UTF-8 et en SQLite
+(deduplication via INSERT OR IGNORE sur url UNIQUE).
 """
 
+import csv
+import sqlite3
 import time
 
 import requests
@@ -21,6 +23,7 @@ HEADERS = {
     "User-Agent": "IPSSI-scraper (+contact@ipssi.fr)",
     "Accept-Language": "fr-FR,fr;q=0.9",
 }
+CHAMPS = ["titre", "url", "date", "categorie", "chapeau"]
 
 
 def page_url(page: int) -> str:
@@ -118,8 +121,47 @@ def scrape_all(max_articles: int = 200) -> list[dict]:
     return collected[:max_articles]
 
 
+def sauver_csv(articles: list[dict], chemin: str = "articles.csv") -> None:
+    with open(chemin, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=CHAMPS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(articles)
+    print(f"CSV : {len(articles)} lignes -> {chemin}")
+
+
+DDL = """
+CREATE TABLE IF NOT EXISTS articles (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    titre       TEXT NOT NULL,
+    url         TEXT NOT NULL UNIQUE,
+    date        TEXT,
+    categorie   TEXT,
+    chapeau     TEXT,
+    scraped_at  TEXT DEFAULT CURRENT_TIMESTAMP
+)
+"""
+
+
+def sauver_sqlite(articles: list[dict], chemin: str = "articles.db") -> None:
+    with sqlite3.connect(chemin) as cx:
+        cx.execute(DDL)
+        inserted = 0
+        for a in articles:
+            try:
+                cx.execute(
+                    "INSERT OR IGNORE INTO articles (titre,url,date,categorie,chapeau) "
+                    "VALUES (:titre,:url,:date,:categorie,:chapeau)",
+                    a,
+                )
+                inserted += cx.execute("SELECT changes()").fetchone()[0]
+            except sqlite3.Error as e:
+                print(f"[Erreur SQLite] {e}")
+        cx.commit()
+    print(f"SQLite : {inserted} nouvelles lignes inserees dans {chemin}")
+
+
 if __name__ == "__main__":
     articles = scrape_all(200)
     print(f"Termine : {len(articles)} articles collectes")
-    for a in articles[:3]:
-        print(a["titre"][:60])
+    sauver_csv(articles)
+    sauver_sqlite(articles)
