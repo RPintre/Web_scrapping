@@ -1,0 +1,295 @@
+{
+  "doctolib": [
+    {
+      "domain": ".doctolib.fr",
+      "expiry": 1785243651,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "None",
+      "secure": true,
+      "value": "Q0VMJglx5wUgBbeJ4ipbH_hbX.wifhsyGLJc_S3yAvE-1785241869.3786478-1.0.1.1-FPz98la1jQpCyM_RAzoNHn.G6aib737g_QateeghtA2i1jXmFREKbJ0bRyDe2emiOWcP482P.JuZ9wzmIEu7pB.fnLlBV.RCJO9QukN0giu1UPDQOoR06D4ucyZaYgTILyGHUTL_to_T7ylQtWEt8Q",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.doctolib.fr",
+      "httpOnly": false,
+      "name": "esid",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "dGX-DCiMUbbeSnUlrU0kq7aG",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.doctolib.fr",
+      "expiry": 1819456251,
+      "httpOnly": false,
+      "name": "ssid",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "c150000win-7OJDlAd4dI5S",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.doctolib.fr",
+      "expiry": 1793194251,
+      "httpOnly": false,
+      "name": "locale",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "fr",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".doctolib.fr",
+      "expiry": 1801056651,
+      "httpOnly": false,
+      "name": "didomi_token",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "eyJ1c2VyX2lkIjoiMTlmYThiNGQtNWIzZS02NDMxLWFjMmUtYWQ5NGQ5ZmE0YmM0IiwiY3JlYXRlZCI6IjIwMjYtMDctMjhUMTI6MzA6NTEuMzE1WiIsInVwZGF0ZWQiOiIyMDI2LTA3LTI4VDEyOjMwOjUxLjMxNVoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.doctolib.fr",
+      "httpOnly": true,
+      "name": "_doctolib_session",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "eialaaOb0u6U50Fx2ug7TOUDRDajgXnI%2BwKk4GSPrQyZJ9BgSt1r3tfMbvxZS7ZnOuyyZReTcuo9ZNtiKzhMqpED0nMl2cqffZi4ZzdjShWIe%2Fy1FjGf4Apsd3HF%2FHkG5iYBbjttIt2jy2GKAeRu2kJvm0OvqV1utXUN%2FCtVq15Me7anEanfBeWmp%2FX%2B%2BqklE1c1303BqTawGPeC1NMXze7cNvxOxUnOA8%2FXQ7siKMtynlKAHFxrWu9TP00UQCgncfbRASxvd%2Fi%2BXO6lgX8k7UJCCDKElB55tv8QHaEJreLpuBdspGufx7UjMDqPmbuBJKQAvAmVG07Ej1pTZYXeOlG2%2FEKxSDXowg%3D%3D--jW2jj3AUSjVa2QGB--snsBW97SX4TqXYPq3OZehw%3D%3D",
+      "classification": "first-party"
+    }
+  ],
+  "maiia": [
+    {
+      "domain": ".maiia.com",
+      "httpOnly": false,
+      "name": "dtSa",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "-",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.maiia.com",
+      "expiry": 1785241889,
+      "httpOnly": false,
+      "name": "TS5195239b029",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "08436124b8ab28005cb9d8e5e427fa4aebc6bcb4470df4571bf0712092d6e9fc5122dcff7d4c369deb1f376f6d147aad",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.maiia.com",
+      "httpOnly": false,
+      "name": "TS017272e8",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "01e55ba6fc2db69043e136023421def268ac7f57d55e8ab2e424b02172732724078feb51e4389028d79ffbf2b7c4c34667977b23fe",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.maiia.com",
+      "expiry": 1785241885,
+      "httpOnly": false,
+      "name": "TS5195239b078",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "08436124b8ab2000e86b9c01752fc57352d279414aa5a3bd5025eb35c248992f7be12341253ee49f08f440194218480147bc30e0799f1a7c5eabcbe88a167e8906b1c9c9bd12a729a8e4df8d4e6bd74bbabfa44153b94aa47fe0ceb5fa0513e84db3cfc6a55b5ac7e0519695a301e33855e0628cbc9cc0ab6a4400e1b82e3952403bb2e0465348b47b58b5a15eaa8d88bc4c8a38a89f05b779eca28e91893b37d156e9ec00731f4d4be5fad95866bfc43555a32bc6e3b6d03142e649c0f73c81426536a9112a389daa818a6a23aa7e5279e010591ac8414c532cecac345cf35b11b3953aea2b4344c12d61501e80e4b49a12325c743f5b3d7383f135ba105d531e17d1271aae7532c2af92a4d51d43bed2bb19eb730170ec8d751852a5f8e7434bed5e2dea21404f80a88d0eb23fd923f9505d3a25a9bf856b735bb6007d96efee0c9ee18179b118d5220bafffb5e71ea34a570b9da76d9541220126f3497b5e4b2d499c3484661fe2e3b7bd77971dc7d93bfbbedd6bfa77",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".maiia.com",
+      "httpOnly": false,
+      "name": "dtCookie",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "v_4_srv_41_sn_E73B52AD5A38D517E99EC3DE2DA62122_perc_100000_ol_0_mul_1_app-3A60196c6158628fd6_1_rcs-3Acss_0",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.maiia.com",
+      "httpOnly": false,
+      "name": "TSPD_101",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "08436124b8ab2800bc38cc1849c89be6678c8cb8dfed8d59925e8b2c6d54a73b07747d4331e408e961bb9d560425ad5e08f4289a3f0518009ecdb4fe3b0a8f8acd57451591d61f25ef0cd125fa613d8a",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".maiia.com",
+      "httpOnly": false,
+      "name": "rxVisitor",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "1785241859273A78GTL5SND0S2DUES2M5PFN3CQ7LK77B",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".maiia.com",
+      "httpOnly": false,
+      "name": "TS01c0e69a",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "01e55ba6fc2db69043e136023421def268ac7f57d55e8ab2e424b02172732724078feb51e4389028d79ffbf2b7c4c34667977b23fe",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".maiia.com",
+      "expiry": 1816777861,
+      "httpOnly": false,
+      "name": "datadome",
+      "path": "/",
+      "sameSite": "None",
+      "secure": true,
+      "value": "HQPtZ45l_jFxh2n5bsAPy9vjo2FsK4xq~luVHUHjcTWvkZlIS_KBbHCylh2f2SokcuKARiIXgEmIU6~76oGHq9yf_3uEEr4KraysQMf9uqgZGb2kBiUQZ0aQadzRWHgS",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".maiia.com",
+      "httpOnly": false,
+      "name": "dtPC",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "41$241859272_165h-vWHAVTPNAFRCPBHESAWPMMQIFNVAFCCAO-0e0",
+      "classification": "first-party"
+    },
+    {
+      "domain": "www.maiia.com",
+      "httpOnly": false,
+      "name": "TS2d35c511027",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "08436124b8ab200030bba908e6757db0ec9cbf2e065f2a93c76f6dabcdeff2ccda4d771002b95f5f086703d09d1130006d27f376641307b0763cfb6fda0c5425e28ebb48a6d37cf5d987cb2ad5c1bc535ab5c99c23634cf532993c52e62a1f66",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".maiia.com",
+      "httpOnly": false,
+      "name": "rxvt",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "1785243673814|1785241859275",
+      "classification": "first-party"
+    }
+  ],
+  "qare": [
+    {
+      "domain": ".qare.fr",
+      "expiry": 1819801879,
+      "httpOnly": false,
+      "name": "_ga",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "GA1.1.1765741157.1785241878",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1816864278,
+      "httpOnly": false,
+      "name": "didomi_token",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "eyJ1c2VyX2lkIjoiMTlmYThiNTQtMDYwMy02ODQwLTgzNzItMjc3ZjIzMmI2YzcxIiwiY3JlYXRlZCI6IjIwMjYtMDctMjhUMTI6MzE6MTguNjI0WiIsInVwZGF0ZWQiOiIyMDI2LTA3LTI4VDEyOjMxOjE4Ljk4N1oiLCJ2ZW5kb3JzIjp7ImVuYWJsZWQiOlsiZ29vZ2xlIiwiYzpwaWFub2h5YnItUjNWS0MycjQiLCJjOnVuYm91bmNlIiwiYzpsaW5rZWRpbi1WVEdrZEJhZiIsImM6ZmFjZWJvb2tjLUtUV2Zhd1djIiwiYzpzbmFwY2hhdGYtQmk3OENGTTYiLCJjOm1pY3Jvc29mdC1xM3pQaEVOYyIsImM6Y29udGVudHNxdWFyZSIsImM6aHVic3BvdCIsImM6cG9zdGhvZy1uUWVUUWZDNiIsImM6Z29vZ2xlYW5hLTRUWG5KaWdSIiwiYzp0aWt0b2stS1pBVVFMWjkiLCJjOmJyYXplLWFCTTlnaDl3Il19LCJwdXJwb3NlcyI6eyJlbmFibGVkIjpbImF1ZGllbmNlbS1oSnhhZUdyUiIsImFuYWx5dGljc190cmFja2luZyIsIm1hcmtldGluZyIsImFkdmVydGlzaW5nIiwiZGV2aWNlX2NoYXJhY3RlcmlzdGljcyIsImdlb2xvY2F0aW9uX2RhdGEiXX0sInZlbmRvcnNfbGkiOnsiZW5hYmxlZCI6WyJnb29nbGUiLCJjOmxpbmtlZGluLVZUR2tkQmFmIiwiYzpwb3N0aG9nLW5RZVRRZkM2IiwiYzpzdHJpcGUtR2lmWkdxQkciLCJjOmFtYXpvbndlYi1XWGVlVjdNNCIsImM6YnJhemUtYUJNOWdoOXciLCJjOnplbmRlc2stalFOakdDZjkiXX0sInB1cnBvc2VzX2xpIjp7ImVuYWJsZWQiOlsiYW5hbHl0aWNzX3RyYWNraW5nIl19LCJ2ZXJzaW9uIjoyLCJhYyI6IkN3YUFFQUZrRmd3QS5Dd2FBRUFGa0Znd0EifQ==",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1816777878,
+      "httpOnly": false,
+      "name": "sharedUnleashSessionId",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "166321312",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1816777877,
+      "httpOnly": false,
+      "name": "cust_client_id",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "9286818621-9630694925",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1816777877,
+      "httpOnly": false,
+      "name": "cust_client_id_created",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": true,
+      "value": "2026-07-28T12:31:17.245Z",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1816864278,
+      "httpOnly": false,
+      "name": "euconsent-v2",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "CQoD2oAQoD2oAAHABBENCpFsAP_AAELAAAAAIzQAwF5gMkAjMBkkAIBeYDJAAAAA.IIzQAwF5gMkAjMAA.f_gACFgAAAAA",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1818937879,
+      "httpOnly": false,
+      "name": "_uetvid",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "3bddc3a08a8011f1bef00d8761a85edb",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1785328279,
+      "httpOnly": false,
+      "name": "_uetsid",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "3bddb3d08a8011f1a64249a2445c604b",
+      "classification": "first-party"
+    },
+    {
+      "domain": ".qare.fr",
+      "expiry": 1819801879,
+      "httpOnly": false,
+      "name": "_ga_XXXXXXX",
+      "path": "/",
+      "sameSite": "Lax",
+      "secure": false,
+      "value": "GS2.1.s1785241877$o1$g0$t1785241879$j60$l0$h758816835",
+      "classification": "first-party"
+    }
+  ],
+  "livi": []
+}
