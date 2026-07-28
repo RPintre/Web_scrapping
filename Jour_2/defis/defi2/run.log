@@ -1,0 +1,8 @@
+[normal] screenshot -> C:\Users\Kyoun\Documents\code\web_scrapping\Jour 2\TP\Jour_2\defis\defi2\normal.png
+[normal] navigator.webdriver = True
+[stealth] screenshot -> C:\Users\Kyoun\Documents\code\web_scrapping\Jour 2\TP\Jour_2\defis\defi2\stealth.png
+[stealth] navigator.webdriver = False
+[headless_sans_stealth] screenshot -> C:\Users\Kyoun\Documents\code\web_scrapping\Jour 2\TP\Jour_2\defis\defi2\headless_sans_stealth.png
+[headless_sans_stealth] navigator.webdriver = True
+[headless_stealth] screenshot -> C:\Users\Kyoun\Documents\code\web_scrapping\Jour 2\TP\Jour_2\defis\defi2\headless_stealth.png
+[headless_stealth] navigator.webdriver = False
