@@ -1,0 +1,26 @@
+[
+  {
+    "nom_specialite": "Dr Léonard MAILLET",
+    "adresse": "17 Rue la Fayette, 75009 Paris",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "16:00"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/paris/leonard-maillet?pid=practice-4106&phs=true&page=1&index=1"
+  },
+  {
+    "nom_specialite": "Dr Sabrina Soltani",
+    "adresse": "83 Rue de la Convention, 75015 Paris",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "11:00",
+      "11:30",
+      "13:30"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/paris/sabrina-soltani?pid=practice-152805&phs=true&page=1&index=19"
+  }
+]
