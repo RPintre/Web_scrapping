@@ -72,6 +72,18 @@ def make_driver(headless: bool = False) -> webdriver.Chrome:
         options.add_argument("--headless=new")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
+        # meme en --headless=new, Chrome garde "HeadlessChrome" dans son
+        # User-Agent (confirme dans defis/defi2) -- Doctolib bloque
+        # systematiquement dessus ("Retry later" des la 1ere requete, teste
+        # a froid, donc pas un rate-limit). On force un UA de Chrome normal.
+        # version alignee sur le Chrome reellement installe (voir
+        # defis/defi2/run.log) : un decalage entre l'UA et les Client Hints
+        # (Sec-CH-UA, envoyes automatiquement avec la vraie version) serait
+        # lui-meme un signal de detection.
+        options.add_argument(
+            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+        )
     # limite (sans la supprimer completement, cf defi 2) la detection
     # d'automatisation
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -310,7 +322,8 @@ def scrape_doctolib(
     headless: bool,
     debug: bool = False,
     seulement_disponibles: bool = False,
-) -> list[dict]:
+) -> tuple[list[dict], float]:
+    t0 = time.time()
     driver = make_driver(headless=headless)
     wait = WebDriverWait(driver, WAIT_TIMEOUT)
 
@@ -322,7 +335,7 @@ def scrape_doctolib(
         # si on filtre sur les disponibilites, il faut scroller plus loin
         # pour avoir assez de candidats (beaucoup n'auront pas de creneau)
         scroll_to_bottom(driver, pauses=8 if seulement_disponibles else 3)
-        return extraire_medecins(
+        medecins = extraire_medecins(
             driver,
             max_medecins,
             selector,
@@ -332,6 +345,28 @@ def scrape_doctolib(
         )
     finally:
         driver.quit()
+    return medecins, time.time() - t0
+
+
+def compare_headless(specialty: str, city: str, max_medecins: int) -> list[dict]:
+    medecins_normal, t_normal = scrape_doctolib(specialty, city, max_medecins, headless=False)
+    print(f"Normal : {t_normal:.1f}s")
+
+    # petite pause avant le 2e run : Doctolib applique un rate-limit court
+    # terme si on enchaine deux scrapes complets immediatement (deja
+    # rencontre pendant le dev, voir README.md)
+    time.sleep(10)
+
+    try:
+        _, t_headless = scrape_doctolib(specialty, city, max_medecins, headless=True)
+    except RuntimeError as err:
+        print(f"Headless: echec ({err}) -- probablement le rate-limit court terme de Doctolib.")
+        return medecins_normal
+
+    print(f"Headless: {t_headless:.1f}s")
+    if t_headless > 0:
+        print(f"Gain : {t_normal / t_headless:.1f}x plus rapide")
+    return medecins_normal
 
 
 def parse_args() -> argparse.Namespace:
@@ -347,19 +382,30 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="ne garde que les medecins avec au moins un creneau trouve",
     )
+    parser.add_argument(
+        "--compare-headless",
+        action="store_true",
+        help="relance le scraping avec et sans fenetre visible et compare la duree",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    medecins = scrape_doctolib(
-        specialty=args.specialty,
-        city=args.city,
-        max_medecins=args.max_medecins,
-        headless=args.headless,
-        debug=args.debug,
-        seulement_disponibles=args.seulement_disponibles,
-    )
+
+    if args.compare_headless:
+        medecins = compare_headless(args.specialty, args.city, args.max_medecins)
+    else:
+        medecins, elapsed = scrape_doctolib(
+            specialty=args.specialty,
+            city=args.city,
+            max_medecins=args.max_medecins,
+            headless=args.headless,
+            debug=args.debug,
+            seulement_disponibles=args.seulement_disponibles,
+        )
+        print(f"Termine en {elapsed:.1f}s")
+
     output_path = Path(__file__).parent / args.output
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(medecins, f, indent=2, ensure_ascii=False)
