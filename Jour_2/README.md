@@ -2,13 +2,10 @@
 
 Scripts Selenium pour le TD2.1 (Doctolib) et le TD2.2 (Les Echos).
 
-Etat actuel de ce depot : **Doctolib fait**, Les Echos et les defis pas
-encore commites (a venir dans de prochains commits).
-
 ## Installation
 
 ```bash
-pip install selenium
+pip install selenium requests beautifulsoup4 lxml
 ```
 
 ## Doctolib
@@ -54,14 +51,67 @@ force donc un User-Agent de Chrome normal en headless (meme version que
 le Chrome installe, pour rester coherent avec les Client Hints envoyes en
 parallele).
 
+## Les Echos
+
+```bash
+python lesechos_scraper.py --check-requests-only
+python lesechos_scraper.py --max-articles 20
+python lesechos_scraper.py --compare-headless --max-articles 10
+```
+
+-> `lesechos.json` (titre, rubrique, chapeau, heure_publi, premium, + url
+en bonus pour verifier).
+
+Les cartes de la une (balise `<article>`) ne contiennent que le titre, la
+rubrique (lien `[data-testid='hubpage-links']`) et le badge premium
+(`[data-testid='subscribe-badge']`) -- verifie en dumpant le HTML complet
+via `--debug`, rien de tel que chapeau ou heure dans leur markup. Le
+script visite donc en plus la page de chaque article (2e passe, delai
+aleatoire entre les visites) pour lire la meta description (`<meta
+name="description">`) comme chapeau -- forcement visible sans abonnement
+puisque c'est le texte utilise pour le referencement -- et l'heure via
+`<time datetime="...">` ou la meta `article:published_time` a defaut.
+Dedoublonnage par URL au passage (Les Echos affiche parfois 2 cartes-titre
+pour la meme actu).
+
+Meme piege User-Agent que sur Doctolib : `--headless` seul renvoyait une
+page "Access Denied" Akamai (voir plus bas), corrige de la meme facon en
+forcant un User-Agent de Chrome normal en headless.
+
+## Pourquoi Selenium et pas requests seul
+
+Teste avec `requests` en premier, comme demande dans le sujet (etape 1 du
+TD2.2, via `--check-requests-only`) :
+
+```
+GET https://www.lesechos.fr -> HTTP 403, 0 balise de titre trouvee
+```
+
+Le 403 renvoie une page "Access Denied" avec une reference
+`errors.edgesuite.net` -- donc Akamai bloque directement au niveau du CDN,
+avant meme d'atteindre le site. Pas la peine d'insister avec requests, il
+faut un vrai navigateur.
+
+## Deux blocages rencontres en developpant, meme cause
+
+- doctolib.fr en `--headless` : "Retry later" systematique, meme a froid.
+- lesechos.fr en `--headless` : "Access Denied" Akamai systematique, meme
+  a froid (capture dans `screenshots/`).
+
+Meme cause dans les deux cas : Chrome garde "HeadlessChrome" dans son
+User-Agent meme en `--headless=new`, et les deux sites bloquent dessus.
+Les deux scripts forcent maintenant un User-Agent de Chrome normal en
+headless -- les deux modes fonctionnent depuis.
+
 ## Headless vs normal
 
 ```bash
 python doctolib_scraper.py --specialty dentiste --city paris --compare-headless --max-medecins 5
+python lesechos_scraper.py --compare-headless --max-articles 10
 ```
 
-Chiffres reels obtenus (5 medecins, apres avoir corrige le piege du
-User-Agent ci-dessus) :
+Chiffres reels obtenus sur Doctolib (5 medecins, apres avoir corrige le
+piege du User-Agent ci-dessus) :
 
 | Mode     | Duree  |
 |----------|--------|
@@ -76,8 +126,19 @@ donc presque rien a gagner ici. Le gain habituellement annonce (~2-3x)
 vient surtout du cout du compositing sur des pages tres lourdes visuellement
 ou des scrapes avec beaucoup moins d'attentes fixes.
 
+Meme constat sur Les Echos (10 articles, apres le meme fix User-Agent) :
+
+| Mode     | Duree  |
+|----------|--------|
+| normal   | 33.9s  |
+| headless | 36.3s  |
+
+Gain ~0.9x -- headless est meme legerement plus lent ici (dans le bruit
+de mesure du reseau). Meme explication : le script est domine par les 2
+passes (une par une + une visite par article avec delai aleatoire de
+1.5 a 3s), pas par le rendu graphique.
+
 ## Screenshots
 
-Capture d'echec automatique dans `screenshots/` quand la liste de
-resultats ne charge pas (utile aussi bien pour un vrai changement de site
-que pour les deux episodes de blocage ci-dessus).
+Au moins une capture d'echec par cible dans `screenshots/`, generee
+automatiquement quand la page attendue ne charge pas.
