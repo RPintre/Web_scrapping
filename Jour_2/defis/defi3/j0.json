@@ -1,0 +1,92 @@
+[
+  {
+    "nom_specialite": "Dr Delphine MIOULET",
+    "adresse": "21 Rue François Garcin, 69003 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/delphine-mioulet?pid=practice-754412&phs=true&page=1"
+  },
+  {
+    "nom_specialite": "Dr Amirouche BENARAB",
+    "adresse": "13 Rue Laporte, 69009 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/amirouche-benarab?pid=practice-66032&phs=true&page=1&index=1"
+  },
+  {
+    "nom_specialite": "Dr Julien Pineau",
+    "adresse": "55 Avenue Jean Mermoz, 69008 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/julien-pineau?pid=practice-744326&phs=true&page=1&index=2"
+  },
+  {
+    "nom_specialite": "Dr Olivier  Dubreuil",
+    "adresse": "51 Avenue Jean Jaurès, 69007 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/olivier-dubreuil?pid=practice-744325&phs=true&page=1&index=3"
+  },
+  {
+    "nom_specialite": "Dr Julien Pineau",
+    "adresse": "51 Avenue Jean Jaurès, 69007 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/julien-pineau?pid=practice-744325&phs=true&page=1&index=4"
+  },
+  {
+    "nom_specialite": "Dr Sebastien Ninet",
+    "adresse": "20 Rue Franklin, 69002 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/sebastien-ninet-lyon-7?pid=practice-744327&phs=true&page=1&index=5"
+  },
+  {
+    "nom_specialite": "Vincent PELLETIER",
+    "adresse": "51 Avenue Jean Jaurès, 69007 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/vincent-pelletier-959ea8bc-d690-4a40-94e7-a23c46a04df4?pid=practice-744325&phs=true&page=1&index=6"
+  },
+  {
+    "nom_specialite": "Dr Olivier  Dubreuil",
+    "adresse": "20 Rue Franklin, 69002 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/olivier-dubreuil?pid=practice-744327&phs=true&page=1&index=7"
+  },
+  {
+    "nom_specialite": "Vincent PELLETIER",
+    "adresse": "55 Avenue Jean Mermoz, 69008 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/vincent-pelletier-959ea8bc-d690-4a40-94e7-a23c46a04df4?pid=practice-744326&phs=true&page=1&index=8"
+  },
+  {
+    "nom_specialite": "Dr ABBASS ALAA EL DIN",
+    "adresse": "168 Cours Lafayette, 69003 Lyon",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [],
+    "url_fiche": "https://www.doctolib.fr/cardiologue/lyon/abbass-alaa-el-din?pid=practice-532714&phs=true&page=1&index=9"
+  }
+]
