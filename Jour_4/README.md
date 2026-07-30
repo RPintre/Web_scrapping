@@ -67,3 +67,30 @@ petite verification croisee gratuite, pratique pour confirmer qu'on
 cible la bonne structure juridique (le nom d'usage d'une entreprise
 recouvre souvent plusieurs entites SIRENE distinctes, une maison mere
 et ses filiales).
+
+## TD 4.3 - Veille Scrapy
+
+```bash
+cd veille
+scrapy crawl rss_spider -L INFO
+```
+
+-> `veille/mentions.csv` + `veille/veille.db` (table `mentions`,
+`UNIQUE(url)`, `score_alerte`).
+
+Cible : **SNCF**. Le sujet propose 5 flux "une" generalistes -- teste
+en pratique, ils ne remontent quasiment jamais une entreprise precise
+(0 mention SNCF sur les 4 flux qui repondent, un run complet). Les
+rubriques **Economie** des memes medias captent bien mieux ce genre de
+veille (3-4 mentions SNCF au meme instant contre 0 sur les flux
+generalistes), donc j'ai swap les flux "une" contre leurs equivalents
+Economie -- toujours 5 flux de medias francophones, juste mieux
+cibles pour l'usage reel du TD. Les Echos garde son flux "une" du
+sujet a titre de temoin : il **403** systematiquement, meme constat
+Akamai que sur le TD Les Echos du Jour 2.
+
+Resultat d'un crawl : 2 mentions, toutes deux scorees **0 (neutre)**
+par le systeme de mots-cles du sujet -- alors qu'a la lecture, les deux
+articles sont clairement negatifs (greve, trains annules). Voir
+[defis/defi1](defis/defi1/README.md) pour pourquoi, et comment la
+recalibration corrige les deux scores.
