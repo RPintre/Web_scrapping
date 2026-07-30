@@ -1,0 +1,28 @@
+{
+  "domaine": "doctolib.fr",
+  "ip": "93.115.102.100",
+  "whois": {
+    "registrar": "CSC CORPORATE DOMAINS INC.",
+    "creation_date": "2013-07-09",
+    "expiration_date": "2026-09-13",
+    "name_servers": [
+      "naomi.ns.cloudflare.com",
+      "bob.ns.cloudflare.com"
+    ],
+    "country": "n/a"
+  },
+  "headers_http": {
+    "status": 200,
+    "certificat_tls_valide": true,
+    "server": "cloudflare",
+    "x_powered_by": "n/a",
+    "x_frame_options": "SAMEORIGIN",
+    "csp_present": true,
+    "hsts_present": true
+  },
+  "sous_domaines": [
+    "ERREUR: 502 Server Error: Bad Gateway for url: https://crt.sh/?q=%25.doctolib.fr&output=json"
+  ],
+  "robots_txt": "User-agent: ia_archiver\nDisallow: /account/\nDisallow: /appointment_online_payments/\nDisallow: /appointments/\nDisallow: /anonymous/\nUser-agent: Meta-ExternalAgent\nAllow: /*$\nAllow: /*?pid=*$\nDisallow: /*?*page=*\nDisallow: /*?*\nAllow: /video_consultation\nAllow: /sante/\nAllow: /directory\nDisallow: /\nUser-agent: *\nDisallow: /appointments/*/reviews/\nDisallow: /account/appointments/*/export\nDisallow: /sessions/new?redirection=\nDisallow: /appointments/\nDisallow: /*availabilitiesBefore=\nDisallow: /*insuranceSector=\nDisallow: /*telehealth=\nDisallow: /*acceptsUnscheduledCare=\nDisallow: /*regulationSector[]=\nDisallow: /*regulationSector%5B%5D=\nDisallow: /*languages[]=\nDisallow: /*languages%5B%5D=\nDisallow: /search_results/*.json\nDisallow: /search\nDisallow: /sessions/reconnect\nDisallow: /*availabilities*\nDisallow: */booking/*\nDisallow: */patient-request*\nDisallow: */patient_messaging*\nDisallow: */patient_interests\nDisallow: */patient-health-search*\nDisallow: */online_booking/draft/new.json\nDisallo",
+  "nb_sous_domaines": 0
+}
