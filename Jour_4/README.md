@@ -102,3 +102,7 @@ recalibration corrige les deux scores.
   normalisation des accents) derriere ce raté.
 - [defi2](defis/defi2/README.md) : OSINT sur ipssi.fr -- certificat
   TLS casse, 503, zero sous-domaine trouve.
+- [defi3](defis/defi3/README.md) : croisement veille/Wikipedia --
+  un vrai edit Wikipedia du jour meme retrouve pour les resultats
+  annuels 2025, mais rien encore pour la greve ou les resultats du
+  1er semestre 2026 au moment du crawl.
