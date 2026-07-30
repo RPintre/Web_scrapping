@@ -100,3 +100,5 @@ recalibration corrige les deux scores.
 - [defi1](defis/defi1/README.md) : pourquoi le scoring original rate
   les 2 seules mentions collectees, et un bug plus profond (pas de
   normalisation des accents) derriere ce raté.
+- [defi2](defis/defi2/README.md) : OSINT sur ipssi.fr -- certificat
+  TLS casse, 503, zero sous-domaine trouve.

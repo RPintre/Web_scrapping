@@ -1,0 +1,28 @@
+{
+  "domaine": "ipssi.fr",
+  "ip": "81.88.57.68",
+  "whois": {
+    "registrar": "AMEN / Agence des Médias Numériques",
+    "creation_date": "2007-06-08",
+    "expiration_date": "2027-06-08",
+    "name_servers": [
+      "ns1.amen.fr",
+      "ns2.amen.fr"
+    ],
+    "country": "n/a"
+  },
+  "headers_http": {
+    "status": 503,
+    "certificat_tls_valide": false,
+    "server": "nginx",
+    "x_powered_by": "n/a",
+    "x_frame_options": "n/a",
+    "csp_present": false,
+    "hsts_present": false
+  },
+  "sous_domaines": [
+    "ERREUR: 502 Server Error: Bad Gateway for url: https://crt.sh/?q=%25.ipssi.fr&output=json"
+  ],
+  "robots_txt": "HTTP 400",
+  "nb_sous_domaines": 0
+}
