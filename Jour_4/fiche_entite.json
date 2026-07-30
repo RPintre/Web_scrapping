@@ -1,0 +1,100 @@
+{
+  "entite": "SNCF",
+  "sirene": {
+    "siren": "552049447",
+    "denomination": "SOCIETE NATIONALE SNCF (SNCF)",
+    "adresse_siege": "2 PLACE AUX ETOILES 93210 SAINT-DENIS",
+    "code_naf": "49.10Z",
+    "date_creation": "1955-01-01",
+    "tranche_effectif": "41"
+  },
+  "wikipedia": {
+    "infobox": {
+      "Création": "31 août 1937 ( décret-loi prévoyant la création de la SNCF) 1 er janvier 1938 (création officielle) ( Paris )",
+      "Dates-clés": "27 septembre 1981 : lancement commercial du TGV . 1 er janvier 1983 : statut d' EPIC . 13 février 1997 : création de RFF . 1 er janvier 2015 : réunification de RFF et de la SNCF. 1 er janvier 2020 : r",
+      "Prédécesseur": "Compagnie des chemins de fer du Nord Administration des chemins de fer d'Alsace et de Lorraine Compagnie des chemins de fer de Paris à Lyon et à la Méditerranée Compagnie du chemin de fer de Paris à O",
+      "Forme juridique": "Société anonyme à capitaux publics",
+      "Sigle": "SNCF",
+      "Slogan(s)": "« SNCF. Pour nous tous. » (2021) [ 1 ] « Il y a toujours un train sur lequel compter » (2021) « Rapprochons-nous » (2016) « Des idées d'avance » (2005) « Donner au train des idées d'avance » (2005) « ",
+      "Siège social": "La Plaine Saint-Denis , Saint-Denis France",
+      "Actionnaires": "État français (100 %) (Groupe SNCF)",
+      "Direction": "Jean Castex , Matthieu Chabanel, Christophe Fanichet [ 2 ]",
+      "Effectifs": "276 271 salariés en France (2022, pour l'ensemble du groupe)",
+      "Filiales": "SNCF Réseau (dont SNCF Gares & Connexions ) SNCF Voyageurs Rail Logistics Europe (dont Hexafret et Technis ) Geodis Keolis Ritmx",
+      "Site web": "groupe-sncf.com",
+      "Chiffre d’affaires": "43,0 milliards d' € (2025) [ 3 ] −0,8 %",
+      "Résultat net": "1,8 milliard d' € (2025) [ 3 ] +15,9 %",
+      "Localisation": "France",
+      "Longueur": "28 000 km",
+      "Dont électrifiés": "16 650 km",
+      "Écartement des rails": "Standard UIC (1 435 mm ) et métrique",
+      "Trafic voyageurs": "10,9 milliards par an (2022) [ 4 ]",
+      "Trafic fret": "19,9 milliards de tkm (2015) [ 5 ]"
+    },
+    "intro": "LaSociété nationale des chemins de fer français—usuellement appelée laSNCF[ɛs.ɛn.se.ɛf]Écouterⓘ—est l'entreprise ferroviairepubliquefrançaise, créée le1erjanvier 1938par convention entre l'Étatet les compagnies de chemin de fer préexistantes, en application dudécret-loidu31 août 1937[6].",
+    "url": "https://fr.wikipedia.org/wiki/SNCF"
+  },
+  "presse": [
+    {
+      "titre": "Incendie en Gironde : la SNCF maintient jusqu’à dimanche 2 août l’annulation des TGV au sud de Bordeaux - Sud Ouest",
+      "source": "Sud Ouest",
+      "date": "Wed, 29 Jul 2026 19:14:09 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOTDQ4V1ZNa0FSSFNSWmR0UWRvMkR5LVJYWk1TTXVwNHJFRWg3cGJKcWRjSUNfbUlrRlY1OEc0S3FkWWExdGJaQUVqc0NoZWl1YVNXenQ4M2FFVkJEZk1sSnpwbXJlYXh1d1h6SDNTNjhoS0Z1Rk1tbktibUN5MTdXQ1RhUy1wSTFIcGpGdGk5eVhzbzc1WE5zVnNSMXVnTTdfemk5QzNjNjJkZ2t4a1Y4UDZtV1ZQYXpVcEdMNHEtSTFGTWVISVBHUDNhQmdLTnE1N2piSkdUYUkxdC1jSFRvQTRxUmpENU1XYXhvOTlsTQ?oc=5"
+    },
+    {
+      "titre": "Vacanciers électrocutés sur le rail du Train jaune : la SNCF propose la suppression de cinq passages à niveau sur cette ligne des Pyrénées-Orientales, \"le problème sera toujours là\" pour le maire - L'Indépendant",
+      "source": "L'Indépendant",
+      "date": "Wed, 29 Jul 2026 19:40:00 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPazdFWHNMTEFKQm9tb3V6OEJQRzgyMGtaWFdHYWM1NXZPNTdrUFp3R0VDSUgzSmZlX0ZGOUFkX09XVWw5LXp4YWxQQWVrQ1Y2eWdhUWx6TXpqRWZJaFlVTm1PMTRXS05ZRU85LWdxYWhsZHZIOERTcm1DblBPMDVrUjkzZ3I5NmROTHJzcVViem0zWU5xVkZqd2hEMVpvVDFqOG5EMFAzcEYzNlplSGl4ejJhTVJTVk5xMWJidE9GUGw2Y2w4aDZ0b2luR2hldlFybVo5OHVGWWlrTGZXNGVVTkpZWWU2QkF2emdndEMwdlRGblpEZ2M3WlVKWUszV1R0YkdPVEJCOFJvX0FybklYNE1pQl90N0MyTXg2QTVuQnZLNHoxeDV2V1lR?oc=5"
+    },
+    {
+      "titre": "Attention si vous avez prévu de partir en vacances en train: la SNCF annonce une grève surprise en Normandie avec un trafic \"perturbé\" sur plusieurs lignes de vendredi à dimanche - BFM",
+      "source": "BFM",
+      "date": "Thu, 30 Jul 2026 09:56:36 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxObTNyTVZHYTRqZHlMUUNjUmJLMndEcVBEb2VtUnhPbWFOZTRtQTRFdlVvQ3BwRmlpa1IyaXJCU0MtTjBMOEU2ZFdQeEZJXzM5RjczSzQ5R3I0d25pVk5ucmtpUFIxRDRicHA5VkVHVVY5elg3MzdpYjVNemJIU2xOX2s4bUNSNEc5TklqeUpwQmszTXZyNWRmYmtzbVE5WDJWTTNUNkFaVWxNZHpqZzlpdllGT0tibXFjMUd1SVZsWVBUYW5CeVY1SE52ZVdHeDBkRXE4N3hoM2p3d1U4N1llVm9FV1BBYTliTXFsQ0FXa21IR192clVmSDcxalVFZXl5d1YxeWpuOVByOHhQcThkRnhKTzlYY1BwZWIxV3poeXZua3F2UTZzeWtRanQ0bUJVd0pkTVUxNkNxWmR6cTl4U0RQRzBfX09iREtkeS1JNEdhaXNCWUZscV9Zai1GRjJMaWx4RTlTV0RCQQ?oc=5"
+    },
+    {
+      "titre": "Grève SNCF surprise sur les lignes normandes, en plein chassé-croisé des vacances : de grosses perturbations annoncées - Actu.fr",
+      "source": "Actu.fr",
+      "date": "Wed, 29 Jul 2026 15:01:31 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMDl3NU9jNC1IS2E1Qkkxd1NIWmVZNENFMy1INVFuVWsySUZQRExoZ0ZYZUdzdGF3OTNCdmE3QnZqSE5WNXZxUElDeHJSUE42VVVQZ0tDNEtjVG4waDVxWVplMk1TZ3MzUnpTSGp2dTgyeDcyck90NnJ3bWJYUElxbUUtT1ZhX3lKMDFEZ3RneEhGVmg2WFU1aTdNYkpKeUZNakQ3bjUyS1EzV3RNUlZSUEl6Y2ZscF8tSHZGRWhsODBEZjFlVzI4ZUNJdzRuWnltZkFjWFQ0QTBKRnlOVFBrRG1kTzllNk9mTThldWdaQlFYU0pBdXkyWVhka3J5M245VHBHVWlRdTVLWjBMbVk0a0t2MA?oc=5"
+    },
+    {
+      "titre": "Une grève surprise pour le week-end : la circulation des trains perturbée à partir de vendredi en Normandie - RTL",
+      "source": "RTL",
+      "date": "Thu, 30 Jul 2026 12:21:20 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcHdtb2VkbEZyNkxrQ0VRa3RQLVBTTVp1dGpZWERad283TGdFQm82OFdYeXNRMG9hc3Mwa1ZCNUNHU0FocUlKdWpGdW53Q2ZwbjdFck1iaVNBNlpUbWhVUktYanRBdU9oUEdfc0hDcmczbmFibFRlMnl4TWl3ZEFyVWloZllxZ01QZTZXUTVjVXluNlM4MUFDd0xqZWhVbWhZYWF6R0N5UWRpdEJ6UkRIYmVvZ2FhVUxOaXlSRzQ1TkR2MXk0SzJYWGt6X1ZiT3ZaMVFFc3V5WUpYRmRBWmg1Nms3a2VQY0ljeXBv?oc=5"
+    },
+    {
+      "titre": "SNCF : trafic interrompu entre Lyon et Valence - Radio SCOOP",
+      "source": "Radio SCOOP",
+      "date": "Thu, 30 Jul 2026 05:11:00 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnE1cmR2dFN1LU0tTHJLSjNmS3JSYm05bV9CcnhBUFpiTjlTa1laN2l4ZmYzRlJtSFd4VjE5M24waFowNzA5b01IYlZfdndVQXFQN0txak0zX2JDMTRpM2duT3d3MmpIcGowZVVVcVJRSWI1ZUd5S1ZGS1BqNUNrWldvS2gyS2tiZTdQbw?oc=5"
+    },
+    {
+      "titre": "SNCF : face à la gronde des usagers contre la ligne Paris-Chartres, Ladislas Vergne monte lui aussi au créneau - L’Écho Républicain",
+      "source": "L’Écho Républicain",
+      "date": "Tue, 28 Jul 2026 07:00:00 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPOFRuMGJEX040VmY5My1kTEo5d1JNRW5TejZUT2xydXdhMVhBV1ZqYUNBUWQyZ0plaWhBdzl3TGY1SU5mbjhWNjA3ZGh2aUdUR3hTMjJqODdRUklqeFY3MFFOSTlhd1FMWmpISVZTeUR5NVY0bWpfcXRVZHZwdmJXZTBSV0ctRENrUE9iNjZNMGpyTjRkcW1IY0VmNmZhRnloRktybGtQNWlaM0FWamZTOHJBUkdUbHV3QUdhRFczVXExZHVLWVFFV2R0dXNLTDNzQjlkdXB5emVIbHJSWnIzUFFCM2t4UGQxblcwWEVJbHdLOWR1VHp1c1l2MHRYZkstM3NPMkFn?oc=5"
+    },
+    {
+      "titre": "Plus d’un milliard… Le bénéfice de la SNCF s’envole au premier semestre - 20 Minutes",
+      "source": "20 Minutes",
+      "date": "Wed, 29 Jul 2026 02:29:00 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVlhYZS0ySFViOGltMTRxNTNNUGc1dFFSMWZyNzhEN0JqdWhiaG04SkxBWllabms4ZElrd2YyRTZhN3lJN0dMM0I4X2pNWlJialZlTm95YWdwXzdTTTVJclI0cjkxQTVFOWl3R3NKM1NoSmdwT1M3MTlSdS1sMl9xTEdBeFFya09fbVRYU09HQnJIQVVyNHlkbTRTT0V0N2ZLcnZFcmhKODJ0QkI2?oc=5"
+    },
+    {
+      "titre": "La SNCF a engrangé plus d'un milliard d'euros de bénéfices au premier semestre, malgré les aléas climatiques - franceinfo",
+      "source": "franceinfo",
+      "date": "Tue, 28 Jul 2026 16:27:35 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNVjNaTC1RLURHZkdudmxRVnRZY1dJbnV4SGZBWUpCLVFHQTZFYWpCQkRWeDNpaTlPSUhoTTFJT213YnMyQ0hXZWR0QUw3Y2xVb3JMekFSdmF5WWNWSUh3ZjI3YUhzSnJqYkh3b05ON1ZnYTdTSnVVekNaMGNGVUUzYWlNbHdGNHJSYnhENUVWMFFNT1o5dW1hSnI5UjVHdDhUZmZFbkFoLXQxZUFlRFNaa1RHN29QNDZiQ1loTjRIQnZWMW9WazdSbmZpeUpmejYtM2FmZ1JhMzVFTk9HSGpySE5Pd2Jjb2FZZWZkSXIzaEMzYjhzeGM3VFIxOVdLdTQ2?oc=5"
+    },
+    {
+      "titre": "La SNCF réalise 1,2 milliard d’euros de bénéfices au premier semestre grâce aux voyageurs toujours plus nombreux - Libération",
+      "source": "Libération",
+      "date": "Tue, 28 Jul 2026 16:11:00 GMT",
+      "lien": "https://news.google.com/rss/articles/CBMingJBVV95cUxNSml6bF9mNlV1dk9tV3lYNTZoU09RdjBqT3o1U2REd3BPaDlyQzJkSVRTVU5LeVJVcFpmbXhjY2VQa0hndkluWW5paE5CcHhDdDdIYU1HejRSZzM3Rmo5a3hlamZSNGhfRGFka1J1U0wtS2RHNUV2NFdNTVlORkxfMWM5U0VBN2d3UWQ0Q1RnR0ExZG9FeFV1dTRmVVNwTnN4Q2wtNDNFblRsZHE2a3FHQ1BCY2F6RHc2RG5yMlNOWnRvbVBIZ1B1RkUxTUQwcUlTYkNmREFiREFCSlozX2F3dEp0empDUUVtbnRBNUJXZmFna1FqbXJWZWpZOWNkQ1V6eWFKQWtHWVFpVjZwY1RvX1Frb21Xa0ozWHAwbWpB?oc=5"
+    }
+  ],
+  "nb_articles": 10
+}

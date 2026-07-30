@@ -40,3 +40,30 @@ ca les passait sous silence ; je l'ai modifie pour retenter en
 `verify=False` et **signaler** `certificat_tls_valide: false` dans le
 rapport plutot que de planter -- un certificat casse est en soi une
 info d'exposition, pas juste un obstacle technique a contourner.
+
+## TD 4.2 - Fiche entite
+
+```bash
+pip install requests feedparser beautifulsoup4 lxml
+python td42_entite.py SNCF
+```
+
+-> `fiche_entite.json` (SIREN, infobox + intro Wikipedia, 10 derniers
+articles de presse via Google News RSS).
+
+### L'URL SIRENE du sujet ne resout plus
+
+`api.annuaire-entreprises.data.gouv.fr` (celle du sujet) est en
+NXDOMAIN. L'API officielle actuelle est
+`recherche-entreprises.api.gouv.fr`, dont le schema JSON differe aussi
+un peu : `activite_principale` et `tranche_effectif_salarie` sont sous
+la cle `siege`, pas a la racine du resultat comme le code du sujet le
+suppose. Le script est adapte en consequence.
+
+Autre detail utile : chercher juste "SNCF" fait remonter en premier
+resultat la bonne entite (`SOCIETE NATIONALE SNCF`, SIREN 552049447),
+qui correspond bien au SIREN affiche dans l'infobox Wikipedia -- une
+petite verification croisee gratuite, pratique pour confirmer qu'on
+cible la bonne structure juridique (le nom d'usage d'une entreprise
+recouvre souvent plusieurs entites SIRENE distinctes, une maison mere
+et ses filiales).
