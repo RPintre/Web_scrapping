@@ -94,3 +94,9 @@ par le systeme de mots-cles du sujet -- alors qu'a la lecture, les deux
 articles sont clairement negatifs (greve, trains annules). Voir
 [defis/defi1](defis/defi1/README.md) pour pourquoi, et comment la
 recalibration corrige les deux scores.
+
+## Defis autonomes
+
+- [defi1](defis/defi1/README.md) : pourquoi le scoring original rate
+  les 2 seules mentions collectees, et un bug plus profond (pas de
+  normalisation des accents) derriere ce raté.
